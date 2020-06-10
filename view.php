@@ -8,18 +8,36 @@
         $getdata = $connection->query("SELECT * FROM data_peserta");
         while($fetchdata_peserta = $getdata->fetch_assoc()){
     ?>
-    <table border="5" style="display:inline-table;width:200px;">
-        <tr>
-        <td><strong><?=$fetchdata_peserta["nama"]?></strong></td>
-            <td><?=$fetchdata_peserta["telp"]?></td>
-            <td><?=$fetchdata_peserta["jenis_kelamin"]?></td>
-            <td><?=$fetchdata_peserta["pendidikan"]?></td>
-        </tr>
+    <table class="table-bordered table table-hover">
+    <br>
+    <thead>
+    <tr>
+    <th>NO.</th>
+    <th>Nama Lengkap</th>
+    <th>Username</th>
+    <th>Alamat</th>
+    <th>No. HP</th>
+    <th>Email</th>
+    <th>Password</th>
+    <th colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdata_peserta[""]?></td>
+    </tr>
+    </tbody>
     </table>
     <?php
         }
     ?>
-    
 </body>
 </head>
 </html>
