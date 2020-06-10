@@ -9,11 +9,6 @@
 </head>
 <body>
 <h1>LIHAT DATA</h1>
-    <?php
-        include 'connect.php';
-        $getdata = $connection->query("SELECT * FROM data_peserta");
-        while($fetchdata_peserta = $getdata->fetch_assoc()){
-    ?>
     <table class="table-bordered table table-hover">
     <br>
     <thead>
@@ -28,6 +23,11 @@
     <th colspan="2">Action</th>
     </tr>
     </thead>
+    <?php
+        include 'connect.php';
+        $getdata = $connection->query("SELECT * FROM data_peserta");
+        while($fetchdata_peserta = $getdata->fetch_assoc()){
+    ?>
     <tbody>
     <tr>
     <td><?fetchdata_peserta[""]?></td>
