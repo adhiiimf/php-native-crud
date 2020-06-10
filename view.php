@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/main.css">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
 <body>
 <h1>LIHAT DATA</h1>
     <?php
@@ -39,5 +45,4 @@
         }
     ?>
 </body>
-</head>
 </html>
