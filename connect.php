@@ -1,7 +1,7 @@
 <?php
     $connection = new mysqli("localhost","root","","yoihalo");
     if(!$connection){
-        echo "Connection Error MAPREEEN!";
+        echo "Connection Error!";
         exit();
     }
 ?>
