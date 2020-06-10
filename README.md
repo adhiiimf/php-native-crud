@@ -6,8 +6,5 @@
 ?>
 ```
 # ------------------------------------------------
-```
-project plan:
-nama lengkap, nickname, password, email;
-```
+
 # YOI MAPREN
