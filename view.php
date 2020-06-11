@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="style/main.css">
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+a{
+   text-decoration:none; 
+}</style>
 </head>
 <body class="bg-dark text-light">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -59,8 +63,8 @@
     <td><?php echo $data['hp'];?></td>
     <td><?php echo $data['email'];?></td>
     <td><?php echo $data['pass'];?></td>
-    <td><button class="button btn btn-info text-light"><a href="" class="text-light">EDIT</a></button></td>
-    <td><button class="button btn btn-danger text-light"><a href="" class="text-light">DELELE</a></button></td>
+    <td><button class="button btn btn-info text-light"><a href="" class="text-light card-link">EDIT</a></button></td>
+    <td><button class="button btn btn-danger text-light"><a href="" class="text-light card-link">DELELE</a></button></td>
 
     </tr>
     <?php
