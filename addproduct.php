@@ -26,7 +26,7 @@
             $message = "eits password itu penting, diisi ya!";
         }else{
             //untuk input datanya
-            $connection->query("INSERT INTO dataku VALUES (null,'".$nama."','".$username."','".$alamat."','".$hp."','".$email."','".$pass."')");
+            $connection->query("INSERT INTO dataku VALUES (null,'".$nama."','".$username."','".$alamat."','".$hp."','".$email."',MD5('".$pass."'))");
             $message = "Data kamu berhasil diinput, terima kasih telah melakukan registrasi yaa";
         }
         $_SESSION["message"] = $message;
