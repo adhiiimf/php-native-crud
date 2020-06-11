@@ -3,20 +3,31 @@
     if(isset($_POST["nama"])){
         include 'connect.php';
         $nama = $_POST['nama'];
-        $telp = $_POST['telp'];
-        $jenis_kelamin = $_POST['jenis_kelamin'];
-        $pendidikan = $_POST['pendidikan'];
+        $username = $_POST['username'];
+        $alamat = $_POST['alamat'];
+        $hp = $_POST['hp'];
+        $email = $_POST['email'];
+        $pass = $_POST['pass'];
+        
         
         $message ="";
 
         if($nama==""){
-            $message = "name must be filled!";
-        }else if($telp==""){
-            $message = "Phone Number must be filled!";
+            $message = "nama kamu harus diisi!";
+        }else if($username==""){
+            $message = "username harus diisi ya!";
+        }else if($alamat==""){
+            $message = "alamat harus diisi ya!";
+        }else if($hp==""){
+            $message = "nomor hp harus diisi ya!";
+        }else if($email==""){
+            $message = "email kamu harus diisi ya!";
+        }else if($pass==""){
+            $message = "eits password itu penting, diisi ya!";
         }else{
             //untuk input datanya
-            $connection->query("INSERT INTO data_peserta VALUES (null,'".$nama."','".$telp."','".$jenis_kelamin."','".$pendidikan."')");
-            $message = "Successfully submit your data, THANKYOU!";
+            $connection->query("INSERT INTO dataku VALUES (null,'".$nama."','".$username."','".$alamat."','".$hp."','".$email."','".$pass."')");
+            $message = "Data kamu berhasil diinput, terima kasih telah melakukan registrasi yaa";
         }
         $_SESSION["message"] = $message;
     }

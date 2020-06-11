@@ -25,19 +25,18 @@
     </thead>
     <?php
         include 'connect.php';
-        $getdata = $connection->query("SELECT * FROM data_peserta");
-        while($fetchdata_peserta = $getdata->fetch_assoc()){
+        $getdata = $connection->query("SELECT * FROM dataku");
+        while($fetchdataku = $getdata->fetch_assoc()){
     ?>
     <tbody>
     <tr>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
-    <td><?fetchdata_peserta[""]?></td>
+    <td><?fetchdataku["no_id"]?></td>
+    <td><?fetchdataku["nama"]?></td>
+    <td><?fetchdataku["username"]?></td>
+    <td><?fetchdataku["alamat"]?></td>
+    <td><?fetchdataku["hp"]?></td>
+    <td><?fetchdataku["email"]?></td>
+    <td><?fetchdataku["pass"]?></td>
     </tr>
     </tbody>
     </table>
