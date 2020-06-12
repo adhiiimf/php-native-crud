@@ -6,10 +6,7 @@
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="style/main.css">
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<style>
-a{
-   text-decoration:none; 
-}</style>
+<style></style>
 </head>
 <body class="bg-dark text-light">
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
