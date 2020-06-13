@@ -17,10 +17,10 @@
   <img src="style/img/joker.jpg" alt="YoiMapren's Logo" style="width:40px;"></a>
   <ul class="navbar-nav rounded-right mx-2">
     <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" href="#">Insert</a>
+      <a class="nav-link active" href="insert.php">Insert</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="view.php">View</a>
