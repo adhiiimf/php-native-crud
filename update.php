@@ -26,7 +26,7 @@
 </nav>
     <br>
 <div class="container" style="margin-top: 84px;">    
-    <h1 class="text-center text-light">YoiMapren CRUD INSERT</h1>
+    <h1 class="text-center text-light">UPDATE YOUR YOIMAPREN</h1>
     <h2 class="text-center text-light">Insert Your Data Here!</h2><br>
     <?php
 	      include 'connect.php';

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>YoiMapren CRUD INSERT</title>
+<title>INSERT YOUR YOIMAPREN</title>
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -29,7 +29,7 @@
 </nav>
     <br>
 <div class="container" style="margin-top: 84px;">    
-    <h1 class="text-center text-light">YoiMapren CRUD INSERT</h1>
+    <h1 class="text-center text-light">INSERT YOUR YOIMAPREN</h1>
     <h2 class="text-center text-light">Insert Your Data Here!</h2><br>
     <form action="addproduct.php" method="post">
     <div>
