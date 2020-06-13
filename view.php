@@ -28,11 +28,7 @@
 <div class="container" style="margin-top: 84px;">  
 <h1 class="text-center">LIHAT DATA</h1>
  
-    <table class="text-center table-hover table-sm table-responsive table-bordered card-header-tabs tab-pane card-text">
-    <?php
-    include 'connect.php';
-    $getdata=mysqli_query($connection,"SELECT * FROM dataku");
-    ?> 
+    <table class="text-center table-hover table-sm table-responsive table-bordered tab-pane card-text">
     <br>
     <thead>
     <tr class=" bg-secondary">
@@ -47,10 +43,11 @@
     </tr>
     </thead>
     <tbody>
-    <?php if(mysqli_num_rows($getdata)>0)?>
     <?php
-        $nomor=1;
-        while($data = mysqli_fetch_array($getdata)){
+      include 'connect.php';
+      $getdata=$connection->query("SELECT * FROM dataku");
+      $nomor=1;
+      while($data = $getdata->fetch_assoc()){
     ?>
     <tr>
     <td><?php echo $nomor++;?></td>
@@ -59,10 +56,9 @@
     <td><?php echo $data['alamat'];?></td>
     <td><?php echo $data['hp'];?></td>
     <td><?php echo $data['email'];?></td>
-    <td><?php echo $data['pass'];?></td>
-    <td><button class="button btn btn-info text-light"><a href="" class="text-light card-link">EDIT</a></button></td>
-    <td><button class="button btn btn-danger text-light"><a href="" class="text-light card-link">DELELE</a></button></td>
-
+    <td><?php echo "*************"?></td>
+    <td><button class="button btn btn-info text-light"><a href="update.php?id=<?=$data["no_id"]?>" class="text-light card-link">UPDATE</a></button></td>
+    <td><button class="button btn btn-danger text-light"><a href="delete.php?id=<?=$data["no_id"]?>" class="text-light card-link">DELELE</a></button></td>
     </tr>
     <?php
         }
