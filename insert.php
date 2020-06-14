@@ -7,6 +7,7 @@
 <title>INSERT YOUR YOIMAPREN</title>
 <meta charset="UTF-8">
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="style/main.css">
 <script src="bootstrap/js/bootstrap.min.js"></script>
@@ -33,7 +34,7 @@
     <h2 class="text-center text-light">Insert Your Data Here!</h2><br>
     <form action="addproduct.php" method="post">
     <div>
-        <label>Nama Lengkap:</label>
+        <label>Nama:</label>
         <input type="text" name="nama" class="form-control" placeholder="nama lengkap" required>
     </div>
     <div>
