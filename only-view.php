@@ -28,18 +28,16 @@
 <div class="container" style="margin-top: 84px;">  
 <h1 class="text-center">LIHAT DATA</h1>
  
-    <table class="text-center table-hover table-sm table-responsive table-bordered tab-pane card-text">
+<table class="table table-hover table-bordered text-center">
     <br>
     <thead>
     <tr class=" bg-secondary">
-    <th>NO.</th>
-    <th>Nama</th>
-    <th>Username</th>
-    <th>Alamat</th>
-    <th>No. HP</th>
-    <th>Email</th>
-    <th>Password</th>
-    <th>Action</th>
+    <th scope="col">NO.</th>
+    <th scope="col">Nama</th>
+    <th scope="col">Username</th>
+    <th scope="col">Alamat</th>
+    <th scope="col">No. HP</th>
+    <th scope="col">Email</th>
     </tr>
     </thead>
     <tbody>
@@ -56,8 +54,6 @@
     <td><?php echo $data['alamat'];?></td>
     <td><?php echo $data['hp'];?></td>
     <td><?php echo $data['email'];?></td>
-    <td><?php echo "****************"?></td>
-    <td><button class="button btn btn-danger text-light">X</button></td>
     </tr>
     <?php
         }

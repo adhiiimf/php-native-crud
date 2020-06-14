@@ -56,7 +56,7 @@
     <td><?php echo $data['alamat'];?></td>
     <td><?php echo $data['hp'];?></td>
     <td class="text-lowercase"><?php echo $data['email'];?></td>
-    <td><?php echo $data['pass'];?></td>
+    <td><?php echo "*************";?></td>
     <td><button class="button btn btn-info text-light"><a href="update.php?id=<?=$data["no_id"]?>" class="text-light card-link">UPDATE</a></button></td>
     <td><button class="button btn btn-danger text-light"><a href="delete.php?id=<?=$data["no_id"]?>" class="text-light card-link">DELELE</a></button></td>
     </tr>
