@@ -28,18 +28,18 @@
 <div class="container" style="margin-top: 84px;">  
 <h1 class="text-center">LIHAT DATA</h1>
  
-    <table class="text-center table-hover table-sm table-responsive table-bordered tab-pane card-text">
+    <table class="table table-hover table-bordered text-center">
     <br>
     <thead>
     <tr class=" bg-secondary">
-    <th>NO.</th>
-    <th>Nama</th>
-    <th>Username</th>
-    <th>Alamat</th>
-    <th>No. HP</th>
-    <th>Email</th>
-    <th>Password</th>
-    <th colspan="2">Action</th>
+    <th scope="col">NO.</th>
+    <th scope="col">Nama</th>
+    <th scope="col">Username</th>
+    <th scope="col">Alamat</th>
+    <th scope="col">No. HP</th>
+    <th scope="col">Email</th>
+    <th scope="col">Password</th>
+    <th scope="col" colspan="2">Action</th>
     </tr>
     </thead>
     <tbody>
@@ -51,11 +51,11 @@
     ?>
     <tr>
     <td><?php echo $nomor++;?></td>
-    <td><?php echo $data['nama'];?></td>
+    <td class="text-uppercase"><?php echo $data['nama'];?></td>
     <td><?php echo $data['username'];?></td>
     <td><?php echo $data['alamat'];?></td>
     <td><?php echo $data['hp'];?></td>
-    <td><?php echo $data['email'];?></td>
+    <td class="text-lowercase"><?php echo $data['email'];?></td>
     <td><?php echo $data['pass'];?></td>
     <td><button class="button btn btn-info text-light"><a href="update.php?id=<?=$data["no_id"]?>" class="text-light card-link">UPDATE</a></button></td>
     <td><button class="button btn btn-danger text-light"><a href="delete.php?id=<?=$data["no_id"]?>" class="text-light card-link">DELELE</a></button></td>
@@ -65,6 +65,6 @@
     ?>
     </tbody>
     </table>
-</div> 
+</div>
 </body>
 </html>
