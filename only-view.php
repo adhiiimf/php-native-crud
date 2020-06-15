@@ -19,9 +19,6 @@
     <li class="nav-item">
       <a class="nav-link" href="insert.php">Insert</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="view.php">View</a>
-    </li>
   </ul>
 </nav>
 
@@ -49,11 +46,11 @@
     ?>
     <tr>
     <td><?php echo $nomor++;?></td>
-    <td><?php echo $data['nama'];?></td>
+    <td class="text-uppercase"><?php echo $data['nama'];?></td>
     <td><?php echo $data['username'];?></td>
     <td><?php echo $data['alamat'];?></td>
     <td><?php echo $data['hp'];?></td>
-    <td><?php echo $data['email'];?></td>
+    <td class="text-lowercase"><?php echo $data['email'];?></td>
     </tr>
     <?php
         }
