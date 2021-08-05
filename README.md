@@ -1,5 +1,5 @@
 # MY CRUD STILL CONSTRUCTION
-```
+```php
 <?php
     $what   = "Yoi Ma Pren - - - - - Yoi Ha Lo";
     $ck     = explode(" ",$what);
